@@ -1,3 +1,4 @@
+
 import pdb
 import numpy as np
 import torch
@@ -51,4 +52,3 @@ with torch.no_grad():
                 model.nets['dehaze_decoder'](fea_syn))
             Image.fromarray(output.astype(np.uint8)).save(
                 'output/' + data['fn'][0])
-
