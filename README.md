@@ -15,3 +15,11 @@ Put your test images in the input directory, and run:
 python --model cra_unrolled_final --resume --ckpt_path $CKPT_PATH
 ```
 The results are in the output directory.
+#### SOTS-OD
+![image](imgs/sots.jpg)
+#### O-HAZE
+![image](imgs/o-haze.jpg)
+#### DENSE-HAZE
+![image](imgs/d-haze.jpg)
+#### NH-HAZE
+![image](imgs/nh-haze.jpg)
