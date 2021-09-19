@@ -5,6 +5,7 @@
 1. [Getting Started](#getting-started)
 	- [Requirements](#requirements)
 	- [Usage Example](#usage)
+1. [Generated images](#genereated-images-on-several-database)
 # Introduction
 This repo provides a semi-supervised dehazing method. We formulate dehazing as a semi-supervised domain translation problem. 
 
@@ -23,13 +24,19 @@ Google drive: [Checkpoint](https://drive.google.com/file/d/1vHydxmBH8o5HuxVyG4oj
 3. CUDA 9.1
 4. Ubuntu 20.04
 
-## usage
+## Usage
+clone the repo
+```
+git clone https://github.com/jklp2/SID_Semi-Supervised_Domain_Translation.git
+cd SID_Semi-Supervised_Domain_Translation
+```
+Download the pretrained [checkpoints](pretrained-checkpoint)
 Put your test images in the input directory, and run:
 ```
 python --model cra_unrolled_final --resume --ckpt_path $CKPT_PATH
 ```
 The results are in the output directory.
-## Results on several database
+## Genereated images on several database
 #### SOTS-OD
 ![image](imgs/sots.jpg)
 #### O-HAZE
