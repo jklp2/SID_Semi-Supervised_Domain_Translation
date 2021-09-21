@@ -7,7 +7,9 @@
 	- [Usage Example](#usage)
 1. [Generated images](#genereated-images-on-several-database)
 # Introduction
-This repo provides a semi-supervised dehazing method. We formulate dehazing as a semi-supervised domain translation problem. 
+This is the PyTorch implementation for our SPL paper:
+***Single Image Dehazing via Semi-Supervised Domain Translation and Architecture Search***
+We provide a semi-supervised dehazing method in this repo.
 # Datasets and Checkpoints
 ### Datasets
 We adopted the same training set as [DA_dehazing](https://github.com/HUSTSYJ/DA_dahazing). 
@@ -42,10 +44,14 @@ python test.py --model cra_unrolled_final --resume --ckpt_path $CKPT_PATH
 The results are in the output directory.
 ## Genereated images on several database
 #### SOTS-OD
+[Download link](https://drive.google.com/file/d/10EbzBsxML4DqvxapvhuXXOmLcA11pNRD/view?usp=sharing)
 ![image](imgs/sots.jpg)
 #### O-HAZE
+[Download link](https://drive.google.com/file/d/1n2VRc5iiYbPefthuM471X_psuhig4MD2/view?usp=sharing)
 ![image](imgs/o-haze.jpg)
 #### DENSE-HAZE
+[Download link](https://drive.google.com/file/d/1ISdv7ugn_b74zDqvO5mjTZSqytjwz3IV/view?usp=sharing)
 ![image](imgs/d-haze.jpg)
 #### NH-HAZE
+[Download link](https://drive.google.com/file/d/1xH-99_KfctaDDhV9ajZxiNl611BJMy6i/view?usp=sharing)
 ![image](imgs/nh-haze.jpg)
